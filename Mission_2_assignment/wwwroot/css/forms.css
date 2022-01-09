@@ -1,0 +1,14 @@
+﻿/* Style the form - display items horizontally */
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+}
+
+.item {
+    flex: 1 1 auto;
+}
