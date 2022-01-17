@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/forms.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="Form">Form</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>This is the footer</footer>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+
+</body>
+</html>
