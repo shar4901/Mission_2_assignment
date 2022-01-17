@@ -2,6 +2,8 @@
 ////	alert($("#groupProjects").val() + $("#Quizzes").val());
 ////})
 
+
+//Grade form math and alert box
 $("#btnsend").click(function () {
 	const weight = [.05, .10, .20, .10, .55];
 
@@ -29,6 +31,7 @@ $("#btnsend").click(function () {
 
 	var output = "You have a " + total + "% in 413" + "\n" + "If the semester ended today, you would have a/an "
 
+	//You can set the grade scale for a class
 	var gradeScale = [94, 90, 87, 84, 80, 77, 74, 70, 67, 64, 60, ]
 
 	if (total >= gradeScale[0]) {
@@ -64,9 +67,13 @@ $("#btnsend").click(function () {
 	else if (total >= gradeScale[10]) {
 		output += "D-";
 	}
-	else {
+	else if (total <= gradeScale[10]) {
 		output += "E";
 	}
+	else {
+		output = "There were invalid inputs"
+    }
 
+	//Print alert
 	alert(output);
 })

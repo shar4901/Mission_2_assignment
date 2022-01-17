@@ -21,7 +21,7 @@ namespace Mission_2_assignment.Models
         }
 
         [HttpPost]
-        public IActionResult Form(FanMailModel model)
+        public IActionResult Form(GradeFormModel gradeResult)
         {
             return View();
         }
